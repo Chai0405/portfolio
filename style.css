@@ -360,38 +360,44 @@ a:hover {
 .hero-section {
     background: linear-gradient(135deg, var(--primary-color), var(--hero-gradient-end));
     color: var(--header-text);
-    min-height: 90vh;
     display: flex;
     align-items: center;
     transition: background 0.4s ease;
+    min-height: auto;        
+    padding: 40px 0 20px;
 }
 
 .hero-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     text-align: left;
     width: 100%;
-    padding: 60px 0;
+    padding: 10px 0;
     animation: fadeIn 1s ease-out;
 }
 
 .hero-text {
     max-width: 60%;
     margin-right: 30px;
+    
 }
 
 .hero-text h1 {
-    font-size: 4em;
+    font-size: 3.2em;
     font-weight: 900;
     margin-bottom: var(--spacing-sm);
     color: var(--header-text);
+    white-space: normal;
 }
 
 .hero-text .lead {
-    font-size: 1.6em;
+    font-size: 1.2em;
     margin-bottom: 30px;
     font-weight: 300;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    word-spacing: 1px;
 }
 
 .hero-image {
@@ -449,6 +455,7 @@ a:hover {
     max-width: 400px;
     border-radius: 8px;
     box-shadow: var(--card-shadow);
+    object-fit: cover;
 }
 
 .about-content > div {
